@@ -1,0 +1,192 @@
+{
+	"info": {
+		"_postman_id": "cb469e7f-d7ea-4684-96f6-c588a0c72845",
+		"name": "REST API CI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Materials",
+			"item": [
+				{
+					"name": "Get Material",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost/rest-api-ci/material",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"rest-api-ci",
+								"material"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Material",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "material_code",
+									"value": "M0002",
+									"type": "default"
+								},
+								{
+									"key": "name",
+									"value": "Bahan Kaos",
+									"type": "default"
+								},
+								{
+									"key": "material_type_code",
+									"value": "T0001",
+									"type": "default"
+								},
+								{
+									"key": "price_buy",
+									"value": "100000",
+									"type": "default"
+								},
+								{
+									"key": "supplier_code",
+									"value": "S0001",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost/rest-api-ci/material",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"rest-api-ci",
+								"material"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Material",
+					"request": {
+						"method": "PUT",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Material",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "material_code",
+									"value": "M0001",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost/rest-api-ci/material?material_code=M0004",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"rest-api-ci",
+								"material"
+							],
+							"query": [
+								{
+									"key": "material_code",
+									"value": "M0004"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Filter by Type Material",
+					"request": {
+						"method": "OPTIONS",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "material_type_code",
+									"value": "T0002",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost/rest-api-ci/material",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"rest-api-ci",
+								"material"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Bilangan Prima",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/rest-api-ci/bilanganprima?limit",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"rest-api-ci",
+						"bilanganprima"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Digit Angka",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/rest-api-ci/digitangka",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"rest-api-ci",
+						"digitangka"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
